@@ -10,12 +10,12 @@ void DopTask01 (double x)
     double y = 0;
     if (x > 0)
     {
-        y = Math.Pow(Math.Sin(x), 2);
+        y = Math.Pow(Math.Sin(Math.PI*x/180), 2);
         Console.WriteLine ("y = " + y);
     }
     else
     {
-        y = (1 - 2*(Math.Sin(x*x)));
+        y = (1 - 2*(Math.Sin(Math.PI*(x*x)/180)));
         Console.WriteLine ("y = " + y);
     }
 }
